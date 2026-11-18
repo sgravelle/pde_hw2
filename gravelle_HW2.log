@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.9.4)  17 NOV 2026 19:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.9.4)  17 NOV 2026 21:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -277,32 +277,40 @@ File: charges_plot.pdf Graphic file (type pdf)
 Package pdftex.def Info: charges_plot.pdf  used on input line 96.
 (pdftex.def)             Requested size: 484.20988pt x 293.61555pt.
  [4 <./charges_plot.pdf>]
-(./gravelle_HW2.aux)
+<error_plot4.pdf, id=209, 451.6875pt x 326.22112pt>
+File: error_plot4.pdf Graphic file (type pdf)
+<use error_plot4.pdf>
+Package pdftex.def Info: error_plot4.pdf  used on input line 111.
+(pdftex.def)             Requested size: 484.20988pt x 349.7301pt.
+ [5 <./error_plot4.pdf>] (./gravelle_HW2.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 3090 strings out of 476182
- 49057 string characters out of 5795596
+ 3097 strings out of 476182
+ 49234 string characters out of 5795596
  1927975 words of memory out of 5000000
- 25071 multiletter control sequences out of 15000+600000
+ 25078 multiletter control sequences out of 15000+600000
  562897 words of font info for 53 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 61i,5n,69p,496b,200s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 61i,5n,69p,497b,200s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/sgravelle/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200
 .600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on gravelle_HW2.pdf (4 pages, 293199 bytes).
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmtt12.pfb>
+Output written on gravelle_HW2.pdf (5 pages, 337029 bytes).
 PDF statistics:
- 243 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 304 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

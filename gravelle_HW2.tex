@@ -96,5 +96,19 @@ for $\theta\in[0,2\pi]$.
 \includegraphics[width=\textwidth]{charges_plot.pdf}
 \end{center}
 
+\newpage
+\subsection*{Problem 4: Speed up the evaluation of the spreading and interpolation operators}
+
+I revised my code to speed up the evaluation of the spreading and interpolation operators. The Gaussian kernel was
+\[\delta_a(x,y)=\frac{1}{2\pi a^2}e^{-(x^2+y^2)/(2a^2)}\]
+which is close to zero on a large part of the domain. I redefined the spreading and interpolation operators to only evaluate $\delta_a$ when it is above a certain cutoff; otherwise, have them treat it as zero.
+
+To determine the cutoff: the Gaussian's maximum value is $\delta_a(0,0)=\frac{1}{2\pi a^2}$, so I defined a cutoff relative to that value. Specifically, let $r=\sqrt{x^2+y^2}$. Then, for small $\epsilon>0$, we have that $\delta_a(x,y)<\epsilon\delta_a(0,0)$ whenever $r^2>-2a^2\ln(\epsilon)$. So, I used $R= \sqrt{-2a^2\ln(\epsilon)}$ as my cutoff, treating $\delta_a$ as 0 for all $x,y$ with $x^2+y^2>R^2$ and only evaluating it for $x,y$ within that radius.
+
+I redid problem 2 with the cutoff set to $\epsilon=10^{-8}$. The resulting error plot is shown below. Comparing it to the error plot in problem 2, we see that this method of speeding up the computation does not come at a significant cost of accuracy.
+
+\begin{center}
+\includegraphics[width=\textwidth]{error_plot4.pdf}
+\end{center}
 
 \end{document}
