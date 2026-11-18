@@ -58,7 +58,17 @@ Dirichlet condition on immersed boundary:
 $u(x^{ib},y^{ib}) = \cos(2x^{ib})\sin(2y^{ib})$
 \end{itemize}
 
-Error plot: $u$ is relative error as in problem 1; the ``error'' for $q$ is just the norm of $q$, since in this problem the correct charge is identically 0.
+I solved this using GMRES with the following parameters:
+
+\texttt{rtol = max(1e-12, 0.001*H*H)}
+
+\texttt{restart = N*N*Nib}
+
+\texttt{maxiter = 1}
+
+Here, $N$ is the number of rectilinear gridpoints on each side, and $Nib$ is the number of immersed boundary points. In the immersed boundary grid, I chose $\Delta\theta=\Delta x$. I considered this a reasonable starting point because for small $\theta$, the small angle approximation gives $\sin(\theta)\approx\theta$, so the choice $\Delta\theta=\Delta x$ makes points on the circle separated by roughly the same distance as points on the rectilinear grid.
+
+Error plot: $u$ is relative error as in problem 1; the ``error'' for $q$ is just the norm of $q$, since in this problem the correct charge is identically 0. While this method converges, we see from the plot below that convergence is at the slower rate of $1/N^{1.5}$, and the overall error is somewhat larger.
 
 \begin{center}
 \includegraphics[width=\textwidth]{error_plot2.pdf}
